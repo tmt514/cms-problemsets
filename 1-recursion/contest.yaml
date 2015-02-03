@@ -1,0 +1,32 @@
+name: "1-recursion"
+description: "Recursion, simple string manipulation"
+tasks:
+  - "factorial"
+    #- "fibonacci"
+    #- "hanoi"
+    #- "L-tiling"
+    #- "gcd"
+    #- "folding-strips"
+    #- "determinant"
+users:
+  - username: "tmt514"
+    password: "tmt1235813"
+  - username: "timchen"
+    password: "cwc"
+    ip: null
+    first_name: "Chun-Wen"
+    last_name: "Chen"
+  - username: "hsinying"
+    password: "hyw"
+    ip: null
+    first_name: "Hsin-Ying"
+    last_name: "Wu"
+  - username: "kuanwen"
+    password: "kww"
+    first_name: "Kuan-Wen"
+    last_name: "Wang"
+    ip: null
+  - username: "nelson"
+    password: "nelsonya"
+    ip: null
+token_mode: infinite
