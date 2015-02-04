@@ -2,7 +2,7 @@ name: "1-recursion"
 description: "Recursion, simple string manipulation"
 tasks:
   - "factorial"
-    #- "fibonacci"
+  - "fibonacci"
     #- "hanoi"
     #- "L-tiling"
     #- "gcd"
