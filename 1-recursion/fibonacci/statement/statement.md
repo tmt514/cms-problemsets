@@ -9,9 +9,9 @@ $$ \left\{\begin{array}{l} F_0 = 0, F_1 = 1 \\
 
 Now you are given an integer $n$, please output the number $F_n$ modulo $10^9+7$.
 
-**Note** Usually we use modulo to prevent calculating on large numbers. This is a simple way to check if your algorithm is correct or not.
+**Note:** Usually we use modulo to prevent calculating on large numbers. This is a simple way to check if your algorithm is correct or not.
 
-You can utilize the file `fibonacci.cpp` to solve this problem. However, there may be some bugs inside!
+You can utilize the attached file(s) `fibonacci_*.cpp` to solve this problem. However, there may be some bugs inside!
 
 ## Input
 
@@ -23,7 +23,7 @@ Please output the value $F_n\mod 10^9+7$.
 
 ## Technical Specifications
 
-* For at least 40% test cases, we have $0\le n\le 20$.
+* For at least 40% test cases, we have $0\le n\le 40$.
 * For at least 60% test cases, we have $0\le n\le 10^5$.
 * For at least 80% test cases, we have $0\le n\le 10^{18}$.
 * For all test cases, we have $0\le n\le 10^{1000}$.

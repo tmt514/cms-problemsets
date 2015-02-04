@@ -6,7 +6,7 @@ elif [ "$1" == "solution" ]; then
 
   for f in $(ls input/input*.txt); do
     out=${f//input/output}
-    ./solution < $f > $out
+    sol/solution < $f > $out
   done
 
 elif [ "$1" == "statement" ]; then
