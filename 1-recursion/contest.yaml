@@ -3,7 +3,7 @@ description: "Recursion, simple string manipulation"
 tasks:
   - "factorial"
   - "fibonacci"
-    #- "hanoi"
+  - "hanoi"
     #- "L-tiling"
     #- "gcd"
     #- "folding-strips"
