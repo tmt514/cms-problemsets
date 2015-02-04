@@ -1,13 +1,9 @@
-name: "1-recursion"
-description: "Recursion, simple string manipulation"
+name: "2-search"
+description: "Searching, Operator overloading"
 tasks:
-  - "factorial"
-  - "fibonacci"
-  - "hanoi"
-    #- "L-tiling"
-    #- "gcd"
-    #- "folding-strips"
-    #- "determinant"
+  - "change-order"
+#- "count-orders"
+#- "expression"
 users:
   - username: "tmt514"
     password: "tmt1235813"
