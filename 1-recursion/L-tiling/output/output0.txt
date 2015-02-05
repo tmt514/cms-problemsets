@@ -1,1 +1,6 @@
-Move disk 1 from 1 to 3.
+PIECE 1 OK!
+PIECE 2 OK!
+PIECE 3 OK!
+PIECE 4 OK!
+PIECE 5 OK!
+FINISH

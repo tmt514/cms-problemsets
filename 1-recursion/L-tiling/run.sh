@@ -11,12 +11,14 @@ elif [ "$1" == "solution" ]; then
 
 elif [ "$1" == "statement" ]; then
   if [ -f statement/header.tex ]; then
-    HEADER=-H statement/header.tex
+    HEADER="-H statement/header.tex"
   else
     HEADER=
   fi
-  pandoc statement/statement.md $HEADER -o statement/statement.pdf
-
+  pandoc $HEADER statement/statement.md -o statement/statement.pdf
+  if [ $? == 0 ]; then
+    scp statement/statement.pdf tmt514@icpc.csie.org:./public_html
+  fi
 else
   echo "[Usage]";
   echo "   ./run.sh zip - zip all data into attachments.";
