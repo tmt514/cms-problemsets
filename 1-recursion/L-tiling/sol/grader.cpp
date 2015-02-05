@@ -68,7 +68,6 @@ bool put_a_piece(int center_x, int center_y, bool dir_x, bool dir_y) {
 }
 
 void debug(bool colorful) {
-#ifndef EVAL
   puts("");
   puts("### DEBUG CALL");
   puts("");
@@ -76,7 +75,6 @@ void debug(bool colorful) {
     printf("%s\n", board[i].c_str());
   }
   puts("");
-#endif
   return;
 }
 
