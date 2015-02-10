@@ -5,7 +5,7 @@ tasks:
   - "fibonacci"
   - "hanoi"
   - "L-tiling"
-    #- "gcd"
+  - "gcd"
     #- "folding-strips"
     #- "determinant"
 users:
@@ -35,3 +35,4 @@ users:
     password: "nelsonya"
     ip: null
 token_mode: infinite
+primary_statements: ["en_US", "zh_TW"]

@@ -48,7 +48,9 @@ bool put_a_piece(int center_x, int center_y, bool dir_x, bool dir_y) {
     if (board[center_x][center_y] != '.' || board[center_x + (dir_x?1:-1)][center_y] != '.' || board[center_x][center_y + (dir_y?1:-1)] != '.') {
 
 #ifndef EVAL
-  fprintf(stderr, "ERROR: PIECE %d OCCUPIED SAME POSITION.\n", count);
+  fprintf(stderr,"ERROR: PIECE %d OCCUPIED SAME POSITION.\n", count);
+#else
+  printf("PIECE %d NOT OK!\n", count);
 #endif
       
     } else {
@@ -62,6 +64,8 @@ bool put_a_piece(int center_x, int center_y, bool dir_x, bool dir_y) {
   } else {
 #ifndef EVAL
   fprintf(stderr, "ERROR: PIECE %d OUT OF BOUND.\n", count);
+#else
+  printf("PIECE %d NOT OK!\n", count);
 #endif
   }
   return true;

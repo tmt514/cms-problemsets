@@ -54,7 +54,7 @@ Here are some global helper function(s) that you can use:
 bool put_a_piece(int center_x, int center_y, bool dir_x, bool dir_y);
 \end{lstlisting}
 
-The two boolean variables $dir_x$ and $dir_y$ representing the direction of a L-tile. For example, if a tile is tiled at $dir_x = $`true` and $dir_y = $`false`, then it will occupy $(center_x, center_y), (center_{x+1}, center_y), (center_x, center_{y-1})$ these three cells.
+The two boolean variables $dir_x$ and $dir_y$ representing the direction of a L-tile. For example, if a tile is tiled at $dir_x = $`true` and $dir_y = $`false`, then it will occupy $(center_x, center_y), (center_x+1, center_y), (center_x, center_y-1)$ these three cells.
 
 The return value of `put_a_piece` is true if you successfully put a piece on the board.
 The coordinates of the grid is from $0$ to $2^n-1$.
@@ -74,7 +74,7 @@ There is no output, but to get full credit, you have to correctly put every piec
 * $1\le n\le 10$.
 * $0\le x, y < 2^n$.
 
-## Sample Input 1
+## Sample Input 1 (`tiling.txt`)
 ```
 2 0 0
 ```
@@ -88,3 +88,7 @@ put_a_piece(0, 3, true, false);
 put_a_piece(3, 0, false, true);
 ```
 
+## Testing
+
+You can use the testing interface on the website.
+For each testing submission you will need provide two files named `tililng.cpp` and `tiling.txt`.
