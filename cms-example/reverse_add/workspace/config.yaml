@@ -1,0 +1,29 @@
+name: reverse_add
+title: x = a + b problem
+
+time_limit: 1 # second(s)
+memory_limit: 256 # MB
+
+subtask:
+  # subtask 1
+  - score: 30
+    testdata: 
+      - sample-1
+      - sample-2
+      - under_1e4-1
+      - under_1e4-2
+      - under_1e4-3
+
+  # subtask 2
+  - score: 70
+    testdata:
+      - sample-1
+      - sample-2
+      - under_1e4-1
+      - under_1e4-2
+      - under_1e4-3
+      - under_1e9-1
+      - under_1e9-2
+      - under_1e9-3
+      - under_1e9-4
+      - under_1e9-5

@@ -1,0 +1,10 @@
+# the line start with '#' is comment
+# username;password;first_name;last_name;hidden
+#
+tmt514;tmt1235813;Shang-En;Huang;0.0.0.0/0;1
+chienweh;cwh;Chien-Weh;Huang;0.0.0.0/0
+timchen;cwc;Chun-Wen;Chen;0.0.0.0/0
+hsinying;hyw;Hsin-Ying;Wu;0.0.0.0/0
+kuanwen;kww;Kuan-Wen;Wang;0.0.0.0/0
+ininsu;iis;In-In;Su;0.0.0.0/0
+nelson;nelsonya;Nelson;Chu;0.0.0.0/0

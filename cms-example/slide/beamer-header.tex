@@ -1,0 +1,118 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+%   Beamer for KDD 2014
+%
+% Author:
+%   MengHuan Yu     cebrusfs@gmail.com
+%                                                            2014 / 02 /23
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[usenames, dvipsnames]{beamer}
+
+% ------------------------------------------------------------------------------
+%	Style
+% ------------------------------------------------------------------------------
+\setbeamertemplate{navigation symbols}{} % 取消工具列
+\useoutertheme{infolines}                % 開啟狀態列
+
+
+
+% ------------------------------------------------------------------------------
+%	邊界
+% ------------------------------------------------------------------------------
+\setlength{\parskip}{8pt plus 1pt minus 1pt}
+
+
+% ------------------------------------------------------------------------------
+%	程式碼
+% ------------------------------------------------------------------------------
+\usepackage{listings}
+
+\lstset{%
+    language        = {c++},
+    % Font Setting
+    basicstyle      = {\linespread{1.1}\ttfamily}, 
+    identifierstyle = {\color{black}},
+    commentstyle    = {\usefont{T1}{pcr}{m}{sl}\color{olive}},
+    keywordstyle    = {\color{blue}},
+    stringstyle     = {\color{purple}},
+    directivestyle  = {\color{brown}},
+    % Single frame around code
+    frame           = {single},
+    % Align Setting
+    xleftmargin     = {2em},
+    xrightmargin    = {2em},
+    % Line number Setting 
+    numberstyle     = {\tiny}, % Line numbers are blue and small
+    numbers         = {left}, % Line numbers on left
+    firstnumber     = {1}, % Line numbers start with line 1
+    stepnumber      = {1}, % Line numbers go in steps of 1
+    % Auto break line if code is too long
+    breaklines      = {true},
+    breakautoindent = {true},
+    % Other
+    showstringspaces= {false}, % Don't put marks in string spaces
+    tabsize         = {4}, % 4 spaces per tab
+    escapeinside    = {{/*}{*/}}, % can use for Chinese
+    extendedchars   = {false},
+    morecomment     = {[l][]{...}}, % Line continuation (...) is comment
+}
+
+
+% ------------------------------------------------------------------------------
+%	xeCJK
+% ------------------------------------------------------------------------------
+\usepackage{fontspec}
+\usepackage[SlantFont]{xeCJK}
+
+\setCJKmainfont[BoldFont=LiHei Pro]{LiSongPro} % 設定主字體
+\setCJKmonofont{LiSongPro} % 設定等寬字體
+\setmonofont{Monaco}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+
+% ------------------------------------------------------------------------------
+%	繪圖
+% ------------------------------------------------------------------------------
+% \usepackage{tikz}
+
+
+% ------------------------------------------------------------------------------
+%	雜七雜八
+% ------------------------------------------------------------------------------
+\usepackage{ulem}           %刪除線    
+\newcommand\dout{\bgroup \markoverwith{\rule[0.2ex]{0.1pt}{0.4pt}\rule[0.8ex]{0.1pt}{0.4pt}}\ULon}  %雙刪除線
+
+\usepackage{multicol}       %多欄位
+\usepackage{comment}        %latex註解插件
+\usepackage{hhline}
+\hbadness=10000			    %美學容忍度設定
+
+% ------------------------------------------------------------------------------
+%	Section header
+% ------------------------------------------------------------------------------
+\AtBeginSection[]
+{%
+    \begin{frame}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+\AtBeginSubsection[]
+{%
+    \begin{frame}[shrink]
+        \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide]
+    \end{frame}
+}
+
+% ------------------------------------------------------------------------------
+%	Auto framebreaks
+% ------------------------------------------------------------------------------
+\let\oldframe\frame
+\renewcommand\frame[1][allowframebreaks]{\oldframe[allowframebreaks, #1]}
+\setbeamertemplate{frametitle continuation}[from second]
+
+% ------------------------------------------------------------------------------
+%	End of Header
+% ------------------------------------------------------------------------------

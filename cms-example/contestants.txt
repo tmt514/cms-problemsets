@@ -1,0 +1,4 @@
+# the line start with '#' is comment
+# username;password;first_name;last_name;hidden
+#
+admin;1234;admin_firstname;admin_lastname;0
