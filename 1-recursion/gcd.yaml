@@ -1,9 +1,0 @@
-name: "gcd"
-title: "Greatest Common Divisors"
-time_limit: 1
-memory_limit: 256
-n_input: 19
-public_testcases: "0"
-infile: ""
-outfile: ""
-token_mode: infinite

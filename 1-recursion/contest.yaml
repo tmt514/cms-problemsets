@@ -8,31 +8,5 @@ tasks:
   - "gcd"
     #- "folding-strips"
     #- "determinant"
-users:
-  - username: "tmt514"
-    password: "tmt1235813"
-  - username: "chienweh"
-    password: "cwh"
-    ip: null
-    first_name: "Chien-Weh"
-    last_name: "Huang"
-  - username: "timchen"
-    password: "cwc"
-    ip: null
-    first_name: "Chun-Wen"
-    last_name: "Chen"
-  - username: "hsinying"
-    password: "hyw"
-    ip: null
-    first_name: "Hsin-Ying"
-    last_name: "Wu"
-  - username: "kuanwen"
-    password: "kww"
-    first_name: "Kuan-Wen"
-    last_name: "Wang"
-    ip: null
-  - username: "nelson"
-    password: "nelsonya"
-    ip: null
-token_mode: infinite
-primary_statements: ["en_US", "zh_TW"]
+start: '2015-02-10 00:00:00.0'
+stop: '2100-02-10 00:00:00.0'
